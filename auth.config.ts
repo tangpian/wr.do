@@ -47,12 +47,12 @@ export default {
     }),
     Resend({
       apiKey: env.RESEND_API_KEY,
-      from: "wrdo <support@wr.do>",
+      from: "Hi <hi@omnibox.app>",
       async sendVerificationRequest({ identifier: email, url, provider }) {
         try {
           // 使用 Resend 发送自定义验证邮件
           const { data, error } = await resend.emails.send({
-            from: provider.from || "no-reply@wr.do",
+            from: provider.from || "hi@omnibox.app",
             to: [email],
             subject: "Verify your email address",
             html: getVerificationEmailHtml({ url, appName: siteConfig.name }),

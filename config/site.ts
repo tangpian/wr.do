@@ -10,16 +10,16 @@ const email_domains = env.NEXT_PUBLIC_EMAIL_DOMAINS || "";
 const email_r2_domain = env.NEXT_PUBLIC_EMAIL_R2_DOMAIN || "";
 
 export const siteConfig: SiteConfig = {
-  name: "WR.DO",
+  name: "OMNIBOX",
   description: "A DNS record distribution system",
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
-    twitter: "https://twitter.com/yesmoree",
-    github: "https://github.com/oiov/wr.do",
+    twitter: "https://twitter.com/omnibox",
+    github: "https://github.com/tangpian/omnibox",
     discord: "https://discord.gg/AHPQYuZu3m",
   },
-  mailSupport: "support@wr.do",
+  mailSupport: "support@omnibox.app",
   freeQuota: {
     record: Number(free_recored_quota),
     url: Number(free_url_quota),
@@ -37,7 +37,7 @@ export const footerLinks: SidebarNavItem[] = [
       { title: "About", href: "/docs" },
       { title: "Terms", href: "/terms" },
       { title: "Privacy", href: "/privacy" },
-      { title: "Blog", href: "https://www.oiov.dev" },
+      { title: "Blog", href: "https://www.omnibox.app" },
     ],
   },
   {
@@ -55,7 +55,7 @@ export const footerLinks: SidebarNavItem[] = [
       { title: "Introduction", href: "/docs" },
       { title: "Guide", href: "/docs/quick-start" },
       { title: "Developer", href: "/docs/developer" },
-      { title: "Contact", href: "mailto:support@wr.do" },
+      { title: "Contact", href: "mailto:support@omnibox.app" },
     ],
   },
 ];
